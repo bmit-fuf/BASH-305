@@ -2,6 +2,20 @@
 
 
 
+Set_Firefox_Autostart (){
+
+input="[Desktop Entry]
+	Type=Application
+	Name=Firefox
+	Exec=firefox"
+cd / 
+sudo touch /etc/xdg/autostart/firefox.desktop
+
+sudo chmod 777 /etc/xdg/autostart/firefox.desktop
+
+echo $input >> /etc/xdg/autostart/firefox.desktop
+
+}
 
 #Set_Startsite_Firefox (){
 #	cd ~
@@ -43,7 +57,7 @@
 #Set_Keylayout
 #Set_Background
 #Set_Startsite_Firefox
-
+Set_Firefox_Autostart
 
 
 
