@@ -1,42 +1,77 @@
 #!/bin/bash
 
 
+#Install_GrubCustomizer(){
 
-Set_Firefox_Autostart (){
+	#sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+#adds the repository
+	#sudo apt-get update
+#updates the list
+	#sudo apt-get install grub-customizer
+#installs grub-customizer
+	#grub-customizer
+#starts grub-customizer
+#}
 
-input="[Desktop Entry]
-	Type=Application
-	Name=Firefox
-	Exec=firefox"
-cd / 
-sudo touch /etc/xdg/autostart/firefox.desktop
+#Change_Password(){
+	#echo "which user should have his/hers PW changed?"
+	#read USinput
+#reads User-input
+	#echo "what should be the new PW?"
+	#read PWinput 
+#reads User-input
+	#echo "$USinput:$PWinput" | chpasswd 
+#transmits the input to the program
+#}
 
-sudo chmod 777 /etc/xdg/autostart/firefox.desktop
 
-echo $input >> /etc/xdg/autostart/firefox.desktop
+#Install_Programm(){
 
-}
+	#echo "which program should get installed?"
+	#read input
+#reads User-input
+	#sudo apt-get install $input 
+#installs the specified program
+#}
+ 
+#Set_Firefox_Autostart (){
+
+	#input="[Desktop Entry]
+	#	Type=Application
+	#	Name=Firefox
+	#	Exec=firefox"
+#declares variable $input
+	#cd / 
+#changes directory to root
+	#sudo touch /etc/xdg/autostart/firefox.desktop
+#creates file
+	#sudo chmod 777 /etc/xdg/autostart/firefox.desktop
+#changes permissions for file
+	#echo $input >> /etc/xdg/autostart/firefox.desktop
+#transmits $input into the created file
+#}
 
 #Set_Startsite_Firefox (){
-#	cd ~
-#ff=`find ~/.mozilla/firefox/* | head -1`
-#stores the found profile path into the "ff" variable 
-#echo $ff
 
-#touch $ff/user.js
+	#cd ~
+	#ff=`find ~/.mozilla/firefox/* | head -1`
+#stores the found profile path into the "ff" variable 
+	#echo $ff
+
+	#touch $ff/user.js
 # creates the user.js-file into the profile
  
-#echo "user_pref("browser.startup.homepage", "https://example.homepage.com | https://example.homepage.com");" > $ff/user.js
+	#echo "user_pref("browser.startup.homepage", "https://example.homepage.com | https://example.homepage.com");" > $ff/user.js
 #Puts the start-websites into the file
-}
-
+#}
 
 #Set_Background () {
-#cd ~
-#wget --output-document=funny_image.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/LinuxWasch3.jpg/1280px-LinuxWasch3.jpg
+
+	#cd ~
+	#wget --output-document=funny_image.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/LinuxWasch3.jpg/1280px-LinuxWasch3.jpg
 #Downloads an image from Wikipedia, saves it as "funny_image.jpg"
 #	
- #gsettings set org.gnome.desktop.background picture-uri "funny_image.jpg"
+	#gsettings set org.gnome.desktop.background picture-uri "funny_image.jpg"
 #sets the image as backgrounf image on gnome
 #}
 
@@ -57,8 +92,9 @@ echo $input >> /etc/xdg/autostart/firefox.desktop
 #Set_Keylayout
 #Set_Background
 #Set_Startsite_Firefox
-Set_Firefox_Autostart
-
+#Set_Firefox_Autostart
+#Install_Programm
+#Install_GrubCustomizer
 
 
 
