@@ -1,0 +1,7 @@
+label: gpt
+label-id: F2EC09D4-0E22-44E1-AE87-8666F4E86B57
+device: /dev/sdb
+unit: sectors
+
+start= 40048, size= 30000, type=5
+
