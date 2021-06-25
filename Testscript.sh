@@ -1,4 +1,17 @@
 #!/bin/bash
+#pstree
+
+
+
+# show parent of process= pstree
+# old autostart= rc.local
+# for grub= /ect/default/grub
+# to update grub update-grub
+
+#to show groups= getent group | cut -d: -f1 | grep ""
+#to show users= getent passwd | cut -d: -f1 | grep ""
+
+
 #User-Creator(){
 Ucount=0
 echo "how many users should be made?"
@@ -80,14 +93,14 @@ echo "${user_array[1]}"
 #Set_Startsite_Firefox (){
 
 	#cd ~
-	#ff=`find ~/.mozilla/firefox/* | head -1`
+	#ff=`find ~/.mozilla/firefox/*.default | head -1`
 #stores the found profile path into the "ff" variable 
 	#echo $ff
 
 	#touch $ff/user.js
 # creates the user.js-file into the profile
  
-	#echo "user_pref("browser.startup.homepage", "https://example.homepage.com | https://example.homepage.com");" > $ff/user.js
+	#echo 'user_pref("browser.startup.homepage", "https://example.homepage.com | https://example.homepage.com");' > $ff/user.js
 #Puts the start-websites into the file
 #}
 
